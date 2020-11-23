@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/background"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:visibility="visible"
+    android:layout_weight="1"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="match_parent"
+        android:layout_width="90dp"
+        app:cardCornerRadius="15dp">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/houseimg"
+        />
+</androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:hint="@string/price"
+            android:text="@string/textview"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            tools:text="Price" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:text="@string/address"
+            android:textSize="12sp"
+            android:layout_marginBottom="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+         >
+
+        <ImageView
+            android:id="@+id/bed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bed"
+            app:srcCompat="@drawable/ic_bed"
+            android:layout_marginEnd="5dp" />
+
+        <TextView
+            android:id="@+id/numBed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:text="@string/_0"
+            android:textColor="#66000000"
+            android:textSize="8sp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/bath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/bath"
+            app:srcCompat="@drawable/ic_bath"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/numBath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview"
+            tools:text="@string/_0"
+            android:textColor="#66000000"
+            android:fontFamily="@font/gotham_book"
+            android:textSize="8sp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/layer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/layer"
+            app:srcCompat="@drawable/ic_layers"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/numLayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="#66000000"
+            android:fontFamily="@font/gotham_book"
+            android:textSize="8sp"
+            android:layout_marginEnd="10dp"/>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/location"
+            app:srcCompat="@drawable/ic_location"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="#66000000"
+            android:fontFamily="@font/gotham_book"
+            android:textSize="8sp"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">DTT app</string>
+    <string name="houseimg">houseImg</string>
+    <string name="textview">TextView</string>
+    <string name="price">Price</string>
+    <string name="address">Address</string>
+    <string name="bed">bed</string>
+    <string name="no">no</string>
+    <string name="_0">0</string>
+    <string name="numbath">numBath</string>
+    <string name="third_child">third child</string>
+    <string name="bath">bath</string>
+    <string name="layer">layer</string>
+    <string name="location">location</string>
+    <string name="location_detail">Location</string>
+    <string name="backbutton">backButton</string>
+    <string name="description">Description</string>
+    <string name="map">map</string>
+    <string name="first_child">first_child</string>
+    <string name="second_child">second_child</string>
+    <string name="dtt_real_estate">DTT REAL ESTATE</string>
+    <string name="sort_by_price">Sort by price</string>
+    <string name="allow_location">Allow location</string>
+    <string name="menu_home">menu home</string>
+    <string name="menu_info">menu info</string>
+    <string name="enable_location">Enable location</string>
+    <string name="cancel">Disable location</string>
+    <string name="ok">Go to settings</string>
+    <string name="google_api_key">AIzaSyDSpeuoAwHCB1zDgWm47IPoMwOVxjS27tE</string>
+    <string name="no_results">No result found!\nPerhaps try another search</string>
+    <string name="about">ABOUT</string>
+    <string name="dnd">Design and Development</string>
+    <string name="by_dtt">by DTT</string>
+    <string name="dtt_banner">DTT banner</string>
+    <string name="d_tt_nl"><a href="https://www.d-tt.nl/">d-tt.nl</a></string>
+    <string name="show_navigation">Show navigation</string>
+    <string name="realist">Realist</string>
+</resources>

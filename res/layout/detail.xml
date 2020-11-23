@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4">
+        <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/houseimg"
+        tools:srcCompat="@drawable/dtt_banner"
+        />
+        <include layout="@layout/toolbar"
+            android:id="@+id/detail_toolbar"></include>
+    </FrameLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/background2"
+        android:padding="20dp">
+    <LinearLayout
+
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gotham_bold"
+                android:hint="@string/price"
+                android:text="@string/price"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                tools:text="Price" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/bed"
+                    android:src="@drawable/ic_bed" />
+
+                <TextView
+                    android:id="@+id/numBed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:text="@string/_0"
+                    android:textColor="#66000000"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/bath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/bath"
+                    android:src="@drawable/ic_bath" />
+
+                <TextView
+                    android:id="@+id/numBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:textColor="#66000000"
+                    android:textSize="10sp"
+                    tools:text="@string/_0" />
+
+                <ImageView
+                    android:id="@+id/layer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/layer"
+                    android:src="@drawable/ic_layers" />
+
+                <TextView
+                    android:id="@+id/numLayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:text="@string/_0"
+                    android:textColor="#66000000"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/location"
+                    android:src="@drawable/ic_location" />
+
+                <TextView
+                    android:id="@+id/distance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gotham_book"
+                    android:text="@string/_0"
+                    android:textColor="#66000000"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_bold"
+            android:text="@string/description"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/description_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/gotham_book"
+            android:text="@string/description"
+            android:textColor="#66000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/location_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/gotham_bold"
+            android:text="@string/location_detail"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp" />
+
+<!--        <com.google.android.gms.maps.MapView-->
+<!--            android:id="@+id/mapView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="350dp"-->
+
+<!--            />-->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context=".UI.MainActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+         <Button
+             android:id="@+id/button_nav"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="end"
+             android:background="@color/red"
+             android:text="@string/show_navigation"
+             android:textColor="@color/colorAccent"
+             android:fontFamily="@font/gotham_book"
+             android:textSize="12sp"
+             ></Button>
+
+        </FrameLayout>
+    </LinearLayout>
+        </ScrollView>
+
+        </LinearLayout>
